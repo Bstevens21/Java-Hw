@@ -10,30 +10,37 @@ package pongpinger;
  *
  * @author Blake
  */
+
 class Pinger extends Thread {
     public void run(){
-        for(int i=0; i < 10; i++){
-            if(i%2 == 0){
-               System.out.println("Ping");
-            }
-            else{
-               System.out.println("Pong");
-            }
-        }
-        if (Thread.interrupted()) {
-            System.out.println("Threads been interrupted!");
-        }
+    System.out.println("Ping");
     }
 }
 
+ class Ponger extends Thread {
+    public void run(){
+   System.out.println("Pong");
+    }
+}
+    
 public class PongPinger {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Pinger pong = new Pinger();
-        pong.start();
+        for(int i=0; i < 10; i++){
+            if(i%2 == 0){
+               Pinger ping = new Pinger();
+               ping.start();
+            }
+            else{
+               Ponger pong = new Ponger();
+               pong.start();
+            }
+        }
+    
+  
     }
     
 }
