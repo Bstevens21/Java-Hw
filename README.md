@@ -6,9 +6,10 @@ Where I will store Java Hw
 Link to source: 
 [ https://github.com/Bstevens21/Java-Hw/tree/master/src/pongpinger ]
 
+##Junit Collection
 
+[https://github.com/Bstevens21/Java-Hw/blob/Junit3/test/routecollectionsmap/RouteCollectionsMapTest.java]
 
-Thread assignment is in src/pongPinger of master branch
+##No kiss test
 
-Junit assignment .java file under Junit2 branch src/jTester
-Junit assignment tests in Junit2 branch under test/Jtester
+[https://github.com/Bstevens21/Java-Hw/blob/NoKiss/src/routecollectionsmap/RouteCollectionsMap.java]
