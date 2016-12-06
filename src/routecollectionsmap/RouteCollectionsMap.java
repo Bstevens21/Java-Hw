@@ -29,6 +29,13 @@ public class RouteCollectionsMap {
                 String key = entry.getKey();
                 Integer value = entry.getValue();
                 
+                assert(tickList.containsKey("14"));
+                assert(tickList.containsKey("1")) == false;
+                assert(tickList.containsValue("Questions and Answers 5.10+"));
+                assert(tickList.containsValue("The best route")) == false;
+                assert(tickList.size() == 5);
+
+                
                 System.out.println("Tick number " + value + " is Blakes ascent "
                         + "of " + key );
             }  
